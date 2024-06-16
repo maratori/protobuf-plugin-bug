@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package example;
+
+import "without.proto";
+import "middle.proto";
+import "end.proto";
+
+message Example {
+    without.Without without = 1;
+    middle.Middle middle = 2;
+    end.End end = 3;
+}
